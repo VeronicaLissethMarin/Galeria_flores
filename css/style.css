@@ -23,7 +23,7 @@ body{
 }
 
 header {
-  background-color: #0077B6;
+  background-color: #E9C46A;
   width: 100%;
 }
 
@@ -31,7 +31,7 @@ nav {
   display: flex;              
   justify-content: space-between; 
   align-items: center;          
-  background-color: #0077B6;    
+  background-color: #E9C46A;    
   padding: 10px 20px;           
 }
 
@@ -99,8 +99,8 @@ nav a:hover {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-image: linear-gradient(#0076b6b2,#c4dde2c5),
-  url("../imagen/imgq.jpg");
+  background-image: linear-gradient(#f4a36181,#e76f51b0),
+  url("../imagen/sunflowers-8351807_1920.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
