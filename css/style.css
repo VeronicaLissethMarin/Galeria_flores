@@ -286,7 +286,7 @@ nav a:hover {
   font-size: 2.5rem;
   font-weight: 600;
   font-family: "SUSE", sans-serif;
-  background: -webkit-linear-gradient(right, #0077B6, #90E0EF);
+  background: -webkit-linear-gradient(right, #E76F51, #E9C46A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
@@ -329,7 +329,7 @@ form .form-row .textarea {
 
 .input-data input:focus,
 .textarea textarea:focus {
-  border-color: #0077B6;
+  border-color: #E76F51;
 }
 
 .input-data label {
@@ -350,7 +350,7 @@ form .form-row .textarea {
 .textarea textarea:not(:placeholder-shown) ~ label {
   top: -10px;
   font-size: 14px;
-  color: #0077B6;
+  color: #E76F51;
 }
 
 .submit-btn .input-data {
@@ -361,10 +361,10 @@ form .form-row .textarea {
 }
 
 .submit-btn .input-data input {
-  background: #90E0EF;
+  background: #E9C46A;
   border: none;
   font-family: "SUSE", sans-serif;
-  color: #2c79ac;
+  color: white;
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
@@ -423,3 +423,66 @@ footer {
   margin-top: 20px;
   font-size: 14px;
 }
+
+.acerca_de {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+
+.acerca_de h1 {
+  font-family: "SUSE", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #E9C46A;
+}
+
+.acerca_de p {
+  font-family: "Work Sans", system-ui;
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+.mission-objectives {
+  background-color: #C5CFFC;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.mission-objectives .content-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mission-objectives h2 {
+  font-family: "SUSE", sans-serif;
+  color: #0077B6;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.mission-objectives p, 
+.mission-objectives ul {
+  font-family: "Work Sans", system-ui;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.mission-objectives ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mission-objectives ul li {
+  margin-bottom: 10px;
+}
+
+.mission-objectives ul li::before {
+  content: "🌸"; /* Agrega un icono floral antes de cada objetivo */
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #E76F51;
+}
+
