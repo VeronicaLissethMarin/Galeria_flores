@@ -124,7 +124,7 @@ nav a:hover {
   border-radius: 5px; 
   display: inline-flex;
   align-items: center;
-  background-color: #0076b6d3;
+  background-color: #264653;
   transition: box-shadow 0.3s ease-in-out;
 }
 
