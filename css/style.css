@@ -80,7 +80,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #90E0EF;           
+  color: #264653;           
 }
 
 .contenedor {
@@ -395,7 +395,7 @@ footer {
 }
 
 .footer-content, .footer-contact {
-  width: 45%; /* Ajusta según sea necesario */
+  width: 45%;
 }
 
 .footer-content h3, .footer-contact h4 {
@@ -480,7 +480,7 @@ footer {
 }
 
 .mission-objectives ul li::before {
-  content: "🌸"; /* Agrega un icono floral antes de cada objetivo */
+  content: "🌸";
   margin-right: 10px;
   font-size: 1.2rem;
   color: #E76F51;
