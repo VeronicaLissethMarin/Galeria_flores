@@ -20,7 +20,8 @@
   <header>
     <nav>
       <div>
-        <h1><a href="index.html"><span class="material-symbols-outlined">emoji_nature</span>Galería de Las Flores</a></h1>
+        <h1><a href="index.html"><span class="material-symbols-outlined">emoji_nature</span>Galería de Las Flores</a>
+        </h1>
       </div>
 
 
@@ -44,7 +45,8 @@
     <div class="present">
       <h1>El Jardín de las flores</h1>
       <p>Conoce nuestra colección de flores en nuestra glaeria</p>
-      <button class="btnpresent" onclick="window.location.href='html/contactus.html'"><i class="material-symbols-outlined">image</i>Contactanos </button>
+      <button class="btnpresent" onclick="window.location.href='html/contactus.html'"><i
+          class="material-symbols-outlined">image</i>Contactanos </button>
     </div>
   </div>
   <div class="container swiper">
@@ -92,28 +94,48 @@
 
   <footer>
     <div class="footer-container">
-        <div class="footer-content">
-            <h3>Galería de Las Flores.</h3>
-            <p>Nosotros creemos en el poder de las flores dando felicidad y alegría. 
-              Traemos a ustedes hermosas flores y transmitirlas a tráves de esta galería trabajada con amor y cariño</p>
-        </div>
-        <div class="footer-contact">
-            <h4>Contáctanos</h4>
-            <p>Email: <a href="mailto:info@floresgaleria.com.sv">info@floresgaleria.com.sv</a></p>
-            <p>Dirección: 27 Av. Nte #1317 San Salvador, El Salvador</p>
-            <p>PBX: 2440-3344 / 2623-5555</p>
-        </div>
+      <div class="footer-content">
+        <h3>Galería de Las Flores.</h3>
+        <p>Nosotros creemos en el poder de las flores dando felicidad y alegría.
+          Traemos a ustedes hermosas flores y transmitirlas a tráves de esta galería trabajada con amor y cariño</p>
+      </div>
+      <div class="footer-contact">
+        <h4>Contáctanos</h4>
+        <p>Email: <a href="mailto:info@floresgaleria.com.sv">info@floresgaleria.com.sv</a></p>
+        <p>Dirección: 27 Av. Nte #1317 San Salvador, El Salvador</p>
+        <p>PBX: 2440-3344 / 2623-5555</p>
+      </div>
     </div>
     <div class="footer-copyright">
-        <p>&copy; 2024 Galería de Las Flores. Todos los derechos reservados.</p>
+      <p>&copy; 2024 Galería de Las Flores. Todos los derechos reservados.</p>
     </div>
-</footer>
+  </footer>
 
 
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/cards.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll('.card-item');
+
+      // Configuración del Intersection Observer
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible'); // Añadir la clase visible cuando entra en el viewport
+          }
+        });
+      });
+
+      // Observar cada tarjeta (card)
+      cards.forEach(card => {
+        observer.observe(card);
+      });
+    });
+  </script>
+
 </body>
 
 </html>
