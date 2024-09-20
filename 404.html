@@ -5,17 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página no encontrada</title>
-    <link rel="stylesheet" href="css/404.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-- Intenta cargar el CSS local y si falla, usa el respaldo -->
+    <script>
+        function loadCSS(href, fallbackHref) {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = href;
+
+            link.onerror = function () {
+                // Si hay un error cargando el archivo CSS local, cargar el de respaldo
+                console.log('Error cargando CSS desde: ' + href + '. Cargando respaldo: ' + fallbackHref);
+                const fallbackLink = document.createElement('link');
+                fallbackLink.rel = 'stylesheet';
+                fallbackLink.href = fallbackHref;
+                document.head.appendChild(fallbackLink);
+            };
+
+            document.head.appendChild(link);
+        }
+
+        // Carga el CSS local y define un respaldo desde una CDN
+        loadCSS('css/404.css', '../css/404.css');
+    </script>
+
+    <!-- Fuentes y otros recursos CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=SUSE:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&family=SUSE:wght@100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    
-
     <div class="error-page">
         <h1>404</h1>
         <p>Página no encontrada</p>
@@ -27,8 +52,9 @@
         <div class="footer-container">
             <div class="footer-content">
                 <h3>Galería de Las Flores.</h3>
-                <p>Nosotros creemos en el poder de las flores dando felicidad y alegría. 
-                  Traemos a ustedes hermosas flores y transmitirlas a tráves de esta galería trabajada con amor y cariño</p>
+                <p>Nosotros creemos en el poder de las flores dando felicidad y alegría.
+                    Traemos a ustedes hermosas flores y transmitirlas a tráves de esta galería trabajada con amor y
+                    cariño</p>
             </div>
             <div class="footer-contact">
                 <h4>Contáctanos</h4>
