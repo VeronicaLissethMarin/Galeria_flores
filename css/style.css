@@ -513,3 +513,13 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+.chart-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#floresChart {
+  display: block;
+  margin: 0 auto;
+}
